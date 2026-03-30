@@ -2,3 +2,5 @@
 __pycache__/
 .ipynb_checkpoints/
 notebook/gsv_out/
+notebook/.DS_Store
+.DS_Store
