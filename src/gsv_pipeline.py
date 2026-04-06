@@ -1054,8 +1054,8 @@ def fetch_front_gsv_for_house(
 
 def load_house_entries(
     csv_path: str | Path,
-    start: int = 1,
-    end: int = 50,
+    start: int = 51,
+    end: int = 100,
     target_date_field: str = "create_date",
 ) -> list[dict[str, Any]]:
     """Load rows in the inclusive range [start, end] from cleaned_data.csv."""
