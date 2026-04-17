@@ -64,6 +64,7 @@ Rules:
 - Use "low" confidence when the evidence is weak, unclear, partially obstructed, or the decision is uncertain.
 - The attributes are the PRIMARY factor in your decision. Do not override them based on general appearance alone.
 - Do not include any text outside the JSON object.
+- You MUST NOT output any reasoning or thinking before the JSON.
 """
 
 # ─────────────────────────────────────────────
@@ -107,7 +108,7 @@ def query_image(image_path):
                     ],
                 },
             ],
-            max_tokens=5000,
+            max_tokens=30000,
             extra_body={"enable_thinking": False},
         )
 
