@@ -4,3 +4,4 @@ __pycache__/
 notebook/gsv_out/
 notebook/.DS_Store
 .DS_Store
+/output/
