@@ -50,13 +50,11 @@ If the image is suitable, analyze the central residential property and respond O
   },
   "final_decision": "abandoned",
   "confidence": "high",
-  "reasoning": "Your reasoning here. The decision MUST be based primarily on the attributes above. 
-  If 2 or more attributes are present, lean toward abandoned. If none or only 1 is present, 
-  lean toward not_abandoned. Explain which attributes you observed and how they influenced your decision."
+  "reasoning": "Your reasoning here. Explain which attributes you observed and how they influenced your decision."
 }
 
 Rules:
-- Each attribute must be 0 (not present) or 1 (present). Be thorough — look carefully for each attribute.
+- Each attribute must be 0 (not present) or 1 (present). Be thorough and inspect the central property carefully.
 - final_decision must be either "abandoned" or "not_abandoned".
 - confidence must be one of: "low", "medium", or "high".
 - Use "high" confidence when the visible evidence is clear and strongly supports the decision.
@@ -65,6 +63,29 @@ Rules:
 - The attributes are the PRIMARY factor in your decision. Do not override them based on general appearance alone.
 - Do not include any text outside the JSON object.
 - You MUST NOT output any reasoning or thinking before the JSON.
+
+Interpret the attributes as follows:
+- broken_or_missing_windows = 1 is evidence toward abandoned
+- boarded_doors_or_windows = 1 is strong evidence toward abandoned, even if no other negative attributes are present
+- severe_structural_damage = 1 is very strong evidence toward abandoned, even if no other negative attributes are present
+- overgrown_vegetation = 1 is evidence toward abandoned
+- graffiti_or_stains_on_walls = 1 is evidence toward abandoned, but weaker than boarded openings or structural damage
+- lights_on = 1 is evidence toward not_abandoned, because visible active lighting suggests occupancy or recent use
+
+Decision guidance:
+- Do NOT use a simple rule such as "0 or 1 attributes means not abandoned."
+- Some single attributes can be sufficient by themselves to support "abandoned," especially boarded_doors_or_windows or severe_structural_damage.
+- Multiple negative attributes strongly support "abandoned."
+- If lights_on = 1, treat that as counter-evidence against abandonment. It should reduce the likelihood of "abandoned" unless there is clear stronger evidence such as boarded openings, severe structural damage, or multiple other negative attributes.
+- If both positive and negative signals are present, weigh the strength of the evidence rather than just counting attributes.
+- Give more weight to boarded_doors_or_windows and severe_structural_damage than to graffiti/stains alone.
+- Overgrown vegetation can support "abandoned," especially when combined with any other negative sign.
+- Broken or missing windows are meaningful evidence toward "abandoned," especially when clearly visible.
+- Do not assume a property is not abandoned just because it appears intact overall if one strong abandonment indicator is clearly present.
+
+Reasoning guidance:
+- In the reasoning field, briefly state which attributes were observed, which were not observed, and why the strongest signals led to the final decision.
+- Keep the reasoning concise and focused on the listed attributes.
 """
 
 # ─────────────────────────────────────────────
