@@ -8,8 +8,8 @@ from openai import OpenAI
 # Config
 # ─────────────────────────────────────────────
 
-IMAGE_DIR    = "../gsv_out"   # update to your image folder on the server
-RESULTS_FILE = os.path.join(IMAGE_DIR, "results.json")
+IMAGE_DIR    = "../data/gsv_out"   # update to your image folder on the server
+RESULTS_FILE = "../result/result/new-prompt-result.json" 
 MODEL        = "/u/capstone/hf_cache/Qwen3.5-35B-A3B"
 
 client = OpenAI(
