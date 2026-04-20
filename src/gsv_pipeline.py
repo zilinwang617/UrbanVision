@@ -149,7 +149,7 @@ def choose_house_target(
             target_lon = geocode_result["lon"]
             target_source = "geocode_address"
 
-    if (target_lat is None or target_lon is None) and not normalized_address:
+    if target_lat is None or target_lon is None:
         if fallback_lat is not None and fallback_lon is not None:
             target_lat = fallback_lat
             target_lon = fallback_lon
@@ -478,6 +478,7 @@ def find_best_pano(
     candidate_radius: int = 25,
     max_distance_meters: float = 20,
     max_baseline_shift_meters: float = 10,
+    max_temporal_gap_years: float | None = None,
     require_baseline: bool = True,
     allow_distance_fallback: bool = False,
 ) -> dict[str, Any]:
@@ -615,6 +616,39 @@ def find_best_pano(
         considered_candidates = baseline_guarded_pool if baseline_guarded_pool else target_considered_candidates
         reduced_candidates = _reduce_to_nearest_per_timepoint(considered_candidates)
 
+        temporal_filtered_count = len(reduced_candidates)
+        if max_temporal_gap_years is not None and target_capture_date:
+            max_months = max_temporal_gap_years * 12
+            temporal_pool = [
+                c for c in reduced_candidates
+                if c["temporal_gap_months"] is not None and c["temporal_gap_months"] <= max_months
+            ]
+            temporal_filtered_count = len(temporal_pool)
+            if not temporal_pool:
+                return {
+                    "ok": False,
+                    "status": "NO_RECENT_PANO",
+                    "message": (
+                        f"No Street View panorama candidate was found within {max_temporal_gap_years} year(s) "
+                        "of the target capture date."
+                    ),
+                    "candidate_count_total": len(candidate_records),
+                    "candidate_count_considered": len(considered_candidates),
+                    "candidate_count_target_filtered": len(target_considered_candidates),
+                    "candidate_count_baseline_filtered": len(baseline_guarded_pool),
+                    "candidate_count_timepoints": len(reduced_candidates),
+                    "candidate_count_temporal_filtered": 0,
+                    "distance_guardrail_applied": bool(target_guarded_pool),
+                    "distance_guardrail_meters": max_distance_meters,
+                    "candidate_radius_meters": candidate_radius,
+                    "max_baseline_shift_meters": max_baseline_shift_meters,
+                    "max_temporal_gap_years": max_temporal_gap_years,
+                    "require_baseline": require_baseline,
+                    "allow_distance_fallback": allow_distance_fallback,
+                    "candidates": candidate_records,
+                }
+            reduced_candidates = temporal_pool
+
         if target_capture_date:
             dated_candidates = [
                 candidate
@@ -688,10 +722,12 @@ def find_best_pano(
             "candidate_count_target_filtered": len(target_considered_candidates),
             "candidate_count_baseline_filtered": len(baseline_guarded_pool),
             "candidate_count_timepoints": len(reduced_candidates),
+            "candidate_count_temporal_filtered": temporal_filtered_count,
             "distance_guardrail_applied": bool(target_guarded_pool),
             "distance_guardrail_meters": max_distance_meters,
             "candidate_radius_meters": candidate_radius,
             "max_baseline_shift_meters": max_baseline_shift_meters,
+            "max_temporal_gap_years": max_temporal_gap_years,
             "require_baseline": require_baseline,
             "allow_distance_fallback": allow_distance_fallback,
             "target_capture_date": target_capture_date,
@@ -761,6 +797,7 @@ def fetch_front_gsv_for_house(
     candidate_radius: int = 25,
     max_distance_meters: float = 20,
     max_baseline_shift_meters: float = 10,
+    max_temporal_gap_years: float | None = None,
     require_baseline: bool = True,
     allow_distance_fallback: bool = False,
     size: str = "640x640",
@@ -822,6 +859,7 @@ def fetch_front_gsv_for_house(
         candidate_radius=candidate_radius,
         max_distance_meters=max_distance_meters,
         max_baseline_shift_meters=max_baseline_shift_meters,
+        max_temporal_gap_years=max_temporal_gap_years,
         require_baseline=require_baseline,
         allow_distance_fallback=allow_distance_fallback,
     )
@@ -908,6 +946,7 @@ def fetch_front_gsv_for_house(
         "candidate_radius_meters": candidate_radius,
         "distance_guardrail_meters": max_distance_meters,
         "baseline_shift_guardrail_meters": max_baseline_shift_meters,
+        "max_temporal_gap_years": max_temporal_gap_years,
         "within_target_distance_guardrail": (
             max_distance_meters is None or distance_meters <= max_distance_meters
         ),
@@ -1119,6 +1158,7 @@ def fetch_entries(
     candidate_radius: int = 25,
     max_distance_meters: float = 20,
     max_baseline_shift_meters: float = 10,
+    max_temporal_gap_years: float | None = None,
     require_baseline: bool = True,
     allow_distance_fallback: bool = False,
 ) -> list[dict[str, Any]]:
@@ -1162,6 +1202,7 @@ def fetch_entries(
                 candidate_radius=candidate_radius,
                 max_distance_meters=max_distance_meters,
                 max_baseline_shift_meters=max_baseline_shift_meters,
+                max_temporal_gap_years=max_temporal_gap_years,
                 require_baseline=require_baseline,
                 allow_distance_fallback=allow_distance_fallback,
                 region=region,
