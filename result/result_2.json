@@ -1,0 +1,1092 @@
+[
+  {
+    "suitable": false,
+    "reason": "The camera is looking down a street or alley with no single central property facing it; the view is dominated by the roadway and flanking commercial/industrial buildings rather than a specific house or building centered at street level.",
+    "filename": "001_20442_front.jpg"
+  },
+  {
+    "suitable": false,
+    "reason": "The camera is looking down a street or alley with no single central property facing it; the view is dominated by buildings on the sides and the road in the center.",
+    "filename": "002_20593_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 1,
+      "lights_on": 0
+    },
+    "final_decision": "not_abandoned",
+    "confidence": "medium",
+    "reasoning": "The image shows a red brick rowhouse in the center. While the lower portion of the wall shows significant white staining (likely efflorescence or peeling paint), the windows appear intact. The ground-floor windows are dark but appear to have white blinds or curtains drawn rather than being boarded up or broken. The front door is painted red and appears intact. There is no severe structural damage or overgrowth on the building itself. Although the neighbor to the left appears abandoned (with boarded windows and commercial-style painting), the central unit lacks definitive signs of abandonment like plywood, broken glass, or collapsed structures.",
+    "filename": "007_21588_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 1,
+      "boarded_doors_or_windows": 1,
+      "severe_structural_damage": 1,
+      "overgrown_vegetation": 1,
+      "graffiti_or_stains_on_walls": 1,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "high",
+    "reasoning": "The property shows severe signs of neglect and abandonment. The roof structure is heavily damaged with visible charred timber, suggesting a fire. The upper-level windows appear to be missing glass or are dark voids. The ground floor has a boarded-up window and a front door covered with plywood. The porch railing is rusted and damaged. Vegetation to the right is overgrown and encroaching on the property. Trash is present on the sidewalk. These are strong indicators of an abandoned state.",
+    "filename": "010_21640_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "not_abandoned",
+    "confidence": "high",
+    "reasoning": "The central property is a well-maintained brick building with a ground-floor entrance featuring pink double doors and a white enclosed bay window to the left. The windows on the upper floor are intact and clear. There is no visible damage, boarding, or overgrowth. The presence of fresh paint on the doors and clean glass indicates active use and maintenance. The adjacent building to the right also appears to be a commercial establishment. There are no signs of abandonment.",
+    "filename": "011_21262_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 1,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 1,
+      "graffiti_or_stains_on_walls": 1,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "medium",
+    "reasoning": "The property exhibits several signs of neglect and abandonment: a broken window pane on the upper floor, extensive graffiti covering the facade and lower window, and significant overgrown vegetation encroaching on the side of the building. The adjacent property appears to be boarded up and dilapidated, which often indicates a block of vacant units. There are no visible signs of occupancy such as lights, maintained landscaping, or intact windows (aside from the graffiti-covered ones).",
+    "filename": "013_22453_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 1,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 1,
+      "graffiti_or_stains_on_walls": 1,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "high",
+    "reasoning": "The central grey brick building shows clear signs of abandonment. The ground floor openings (likely windows and doors) are covered with plywood sheets. Large, overgrown bushes obscure the lower portion of the facade and entrance area. There is also visible graffiti (yellow spray paint) on the upper right wall of the unit. While the upper windows appear framed, the combination of boarding and neglect strongly indicates the property is not in active use.",
+    "filename": "014_22517_front.jpg"
+  },
+  {
+    "suitable": false,
+    "reason": "The image shows a gap or narrow alleyway between two distinct buildings (one on the left with a porch, one on the right with boarded windows). There is no single central property facing the camera for assessment.",
+    "filename": "015_21738_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "not_abandoned",
+    "confidence": "high",
+    "reasoning": "The image shows a row of attached brick units. The central unit (distinguished by the downspout to its right) features a clean white entry door, a satellite dish, and windows with visible blinds, all indicating occupancy and maintenance. While the unit to the right is heavily covered in dead ivy and has boarded windows (suggesting abandonment), the central subject itself shows no signs of neglect. The ivy on the central unit appears to be creeping from the adjacent property, but the main facade features are intact.",
+    "filename": "016_20610_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "not_abandoned",
+    "confidence": "high",
+    "reasoning": "The central unit (identified by the white railing porch) appears well-maintained compared to the adjacent property to the left, which has boarded openings. The central unit has intact windows with blinds, a clear front door, potted plants on the railing, and a tended garden bed, indicating occupancy or active maintenance. There are no signs of structural decay, overgrowth, or vandalism on this specific unit.",
+    "filename": "018_22866_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 1,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "not_abandoned",
+    "confidence": "medium",
+    "reasoning": "The property appears to be a residential house with intact structure and siding. While there is overgrown vegetation on the right side and weeds near the foundation, these signs are not definitive for abandonment. The presence of a parked car in the foreground suggests recent activity or occupancy, making abandonment unlikely.",
+    "filename": "019_21608_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 1,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 1,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "high",
+    "reasoning": "The central unit (darker siding) exhibits significant damage to the upper story, with a large open section exposing internal framing and missing walls/windows. While a banner for a deck company is present, suggesting potential renovation, the building lacks clear signs of current occupancy (no lights, window coverings, or active workers). A sign on the door suggests it is for sale. The structural integrity appears compromised or in a state of major disassembly, fitting the profile of an abandoned or uninhabitable property.",
+    "filename": "020_20983_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "not_abandoned",
+    "confidence": "high",
+    "reasoning": "The property is a multi-story residential building in good structural condition. The white siding is intact, and there are no broken or boarded-up windows. While there are signs on the door and window indicating the property may be for lease (suggesting temporary vacancy), there is no evidence of neglect, decay, or severe overgrowth that would characterize it as abandoned. The exterior appears well-maintained.",
+    "filename": "021_22235_front.jpg"
+  },
+  {
+    "suitable": false,
+    "reason": "The camera is looking down a street with no single central property facing it. The center of the image is occupied by the brick road extending into the distance, and while there are houses on the sides, there is no clearly visible house centered and facing the camera.",
+    "filename": "022_20187_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "medium",
+    "reasoning": "The property exhibits significant signs of long-term neglect and decay, particularly the extensive peeling and weathering of the siding on the upper facade which indicates a lack of maintenance. There are no visible signs of active occupancy such as interior lights, maintained landscaping, or personal items on the porch. While there are no boarded windows or severe structural collapse, the advanced state of exterior decay supports an assessment of abandonment.",
+    "filename": "023_21108_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 1,
+      "severe_structural_damage": 1,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "high",
+    "reasoning": "The central wooden structure shows clear signs of abandonment. The front door is completely covered with a white board or sheeting, sealing the entrance. There is a significant amount of rubble and loose bricks at the base of the building, suggesting a collapsed porch or severe foundation deterioration. The siding is heavily weathered and unkept compared to the neighboring occupied homes. The boarded-up entrance and debris are strong indicators that the property is no longer in use.",
+    "filename": "024_20494_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "not_abandoned",
+    "confidence": "high",
+    "reasoning": "The central property appears to be an occupied residential home. There is a car parked directly in front of the garage, indicating recent use. There are potted plants and decorations on the deck area. The structure is intact with no visible broken windows, boarding, or severe structural damage. The landscaping is tidy.",
+    "filename": "029_20771_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 1,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "medium",
+    "reasoning": "The central property is a tall, narrow house partially obscured by a utility pole and significant, unkempt vegetation in the front yard. The overgrown bushes and trees reach the structure, suggesting a lack of maintenance. Unlike the neighboring house to the left, which displays clear signs of occupancy (porch decorations, maintained plants), this property lacks visible signs of active habitation such as parked cars, lighting, or cleared walkways. The structure itself appears intact, but the heavy neglect of the grounds strongly indicates abandonment.",
+    "filename": "030_20178_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 1,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 1,
+      "graffiti_or_stains_on_walls": 1,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "medium",
+    "reasoning": "The central yellow house shows clear signs of neglect and vacancy. Key indicators include a boarded-up opening on the lower level, significant ivy overgrowth covering the porch walls and railing, and heavy staining on the foundation walls. Although trash bins are present on the sidewalk, the boarded openings and unkempt vegetation are stronger signals of abandonment.",
+    "filename": "031_22231_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "not_abandoned",
+    "confidence": "high",
+    "reasoning": "The central property (the dark wood-sided house with the elevated deck) exhibits clear signs of occupancy, including a US flag, outdoor furniture on the porch, and trash bins. While the yard is somewhat unkempt with concrete blocks and the deck appears weathered, there are no indicators of abandonment such as boarded windows or severe structural failure on the main building. The house to the right (white siding) has boarded windows but is a separate adjacent unit.",
+    "filename": "032_20588_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 1,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 1,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "medium",
+    "reasoning": "The property shows significant signs of neglect and disrepair, most notably the visibly sagging porch roof which indicates structural issues. The woodwork on the porch columns is weathered, and there are visible water stains and dark discoloration under the porch overhang. While the windows appear intact and a satellite dish is visible (which could suggest past occupancy), there are no active occupancy cues such as lights on, parked cars, or a well-maintained lawn. The combination of structural sagging and lack of maintenance cues points to abandonment.",
+    "filename": "033_20727_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 1,
+      "severe_structural_damage": 1,
+      "overgrown_vegetation": 1,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "high",
+    "reasoning": "The central house shows clear signs of abandonment and disrepair compared to its neighbors. There is significant overgrown vegetation (vines) covering the front facade and porch area. The lower level appears to be boarded up or covered with deteriorating material. The porch structure looks sagging or partially collapsed. There are no lights on, and the general state is one of neglect.",
+    "filename": "034_21165_front.jpg"
+  },
+  {
+    "suitable": false,
+    "reason": "The image shows a view from inside a tunnel or underpass with vehicles on the road, not a residential property.",
+    "filename": "036_21260_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 1,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "high",
+    "reasoning": "The central property clearly shows signs of abandonment. The front porch area, including the front door and likely a window, is covered with plywood boards. Additionally, a window on the second floor is also boarded up. There are no visible signs of recent activity such as cars, lights, or maintained landscaping (the yard is covered in fallen leaves). The contrast with the neighboring house to the left, which has clear windows, highlights the vacant state of the central property.",
+    "filename": "038_19860_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 1,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 1,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "high",
+    "reasoning": "The property exhibits strong signs of abandonment. There are multiple boarded-up windows on both the main brick facade and the concrete foundation, indicating security measures for a vacant space. Additionally, the front yard is heavily overgrown with tall weeds and grass, showing a clear lack of recent maintenance. While the structure itself appears standing, these visual cues point to vacancy.",
+    "filename": "040_20913_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 1,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "not_abandoned",
+    "confidence": "medium",
+    "reasoning": "The property appears to be on the market, indicated by the white and blue papers taped to the lower right window, which suggests active management or listing. While there is noticeable overgrown vegetation in the front yard and near the foundation, there are no signs of severe structural decay, boarded windows, or broken glass that would definitively classify it as abandoned. The entrance remains accessible.",
+    "filename": "045_21652_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 1,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "medium",
+    "reasoning": "The central property is heavily covered in climbing ivy and surrounded by tall, untrimmed bushes that obscure the lower facade and likely the entrance. This level of overgrowth, especially compared to the adjacent neighbor which appears maintained, suggests significant neglect consistent with abandonment. There are no visible signs of occupancy such as cleared paths or active utilities.",
+    "filename": "046_19961_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 1,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 1,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "medium",
+    "reasoning": "The central property exhibits clear signs of neglect and potential abandonment. The front yard is significantly overgrown with tall grass and weeds, indicating a lack of recent maintenance. There appears to be a missing window pane in the upper gable section, which is dark and lacks the reflection seen in other windows. Additionally, papers are posted on the front door and a ground-floor window, a common occurrence for vacant properties or those in foreclosure. While the structure itself stands, these combined factors suggest the property is abandoned.",
+    "filename": "047_20194_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "not_abandoned",
+    "confidence": "high",
+    "reasoning": "The central property is a residential brick home in good structural condition with intact windows and doors. There are clear signs of maintenance and occupancy, including an American flag on the porch, a chair on the stoop, and curtains visible in the windows. The vegetation in the front yard is contained within a planter box and does not obscure the entrance, indicating regular, albeit perhaps informal, gardening rather than neglect. There is no evidence of abandonment such as boarding, severe decay, or heavy overgrowth.",
+    "filename": "048_22808_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "not_abandoned",
+    "confidence": "high",
+    "reasoning": "The image shows a well-maintained multi-story brick building, likely mixed-use or residential, with intact windows, clean facade, and proper awnings. There are no visible signs of neglect, structural damage, or abandonment. The property appears to be in active use.",
+    "filename": "051_22557_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 1,
+      "boarded_doors_or_windows": 1,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 1,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "high",
+    "reasoning": "The property shows clear signs of abandonment and neglect. The upper-story windows are missing glass panes, and the window to the right of the entrance on the ground floor is boarded up with plywood. The front door appears severely weathered and damaged. Additionally, there is overgrown vegetation (a large bush) at the base of the building and weeds growing in the sidewalk cracks.",
+    "filename": "053_19939_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "not_abandoned",
+    "confidence": "high",
+    "reasoning": "The image shows a well-maintained two-story red brick residential building. The windows appear intact with no visible breakage. There are no boarded-up doors or windows. The front yard features tidy landscaping with mulch beds and healthy plants, indicating recent care and occupancy. The brickwork is sound with no visible structural damage. There are no signs of abandonment or severe neglect.",
+    "filename": "058_22620_front.jpg"
+  },
+  {
+    "suitable": false,
+    "reason": "The image shows the side of a building and an adjacent alleyway/driveway. There is no single residential property centered in the frame facing the camera, which is required for assessment.",
+    "filename": "059_20329_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 1,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 1,
+      "overgrown_vegetation": 1,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "high",
+    "reasoning": "The property shows significant signs of neglect and abandonment. There is a large, open frame on the upper level where a door or wall should be, exposing the interior structure. A plant is visibly growing out of the wooden deck structure, indicating a lack of maintenance over a long period. The upper level siding appears patchy or unfinished, and the overall structure looks dilapidated. While there is a blue chair on the lower porch, the severity of the structural exposure and vegetation growth outweighs this as a sign of occupancy.",
+    "filename": "060_21021_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 1,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "high",
+    "reasoning": "The central property (the purple brick unit to the right of the center line, and partially the red unit labeled 711) shows clear signs of abandonment. Specifically, there is a large ground-floor window boarded up with plywood on the purple unit. A large sheet of plywood/debris is leaning against the entrance steps/railing. There are no lights visible inside. While the adjacent unit (711) has curtains in one window, the boarded window on both units and the debris suggest the property is vacant and neglected.",
+    "filename": "062_20928_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 1,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "medium",
+    "reasoning": "The central unit displays a window opening on the ground floor that appears to be covered with boards or plywood, and there is a blue code enforcement tag attached to the door. These are strong indicators of vacancy and neglect. The door itself appears weathered. While the structure is intact, the combination of the boarded opening and official tagging suggests the property is abandoned or at least vacant and in disrepair, especially when contrasted with the occupied appearance of the adjacent unit to the left.",
+    "filename": "064_21529_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 1,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 1,
+      "graffiti_or_stains_on_walls": 1,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "high",
+    "reasoning": "The central building (dark red brick) shows clear signs of abandonment. The upper floors have large openings where windows and parts of the wall are missing, indicating severe disrepair or neglect. The brickwork is heavily stained and weathered. There is unkempt vegetation (a yellowing bush/tree) growing in the front yard area near the porch. While the ground floor appears structurally intact, the lack of lights and the dilapidated state of the upper levels strongly suggest the property is abandoned.",
+    "filename": "065_20429_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 1,
+      "boarded_doors_or_windows": 1,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 1,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "high",
+    "reasoning": "The property shows strong signs of abandonment including significant overgrown vegetation encroaching on the structure, peeling paint and exposed brick indicating long-term neglect, and windows that appear boarded or covered (blue board in lower window, dark/broken look in dormer). There are no signs of occupancy like lights or maintained landscaping.",
+    "filename": "070_22308_front.jpg"
+  },
+  {
+    "suitable": false,
+    "reason": "The central property is heavily obstructed by a large tree and a significant digital artifact (privacy blur/glitch) that obscures the ground floor, porch, and entrance area, making it impossible to assess conditions like boarded windows or door status.",
+    "filename": "075_21545_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 1,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "not_abandoned",
+    "confidence": "medium",
+    "reasoning": "The central unit, identified by the clear white-framed window and central brick arch, appears intact with no visible boarding or broken windows. While there is overgrown vegetation in the front yard and the unit to the right has a boarded opening, the condition of the central window suggests it may be occupied or at least maintained, distinguishing it from the neighboring vacant unit.",
+    "filename": "076_21917_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 1,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "medium",
+    "reasoning": "The central unit (identifiable by the white double window) shows signs of neglect, specifically overgrown vegetation in the front yard that reaches the fence line. While the central window itself is intact and there are no cars parked directly in front of this specific unit (unlike the flanking units which have cars), the unkempt yard and the presence of a boarded-up window on the adjacent right unit suggest vacancy or abandonment of this section of the property.",
+    "filename": "077_22227_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 1,
+      "severe_structural_damage": 1,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "high",
+    "reasoning": "The central residential unit exhibits strong signs of abandonment. The upper-story windows are covered with white material, likely boards or sheeting, indicating they are secured for security or weatherproofing. The front porch structure shows significant sagging and potential roof collapse. There is debris in the yard and a general lack of upkeep, contrasting with the potentially occupied unit to the far right.",
+    "filename": "078_21014_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "not_abandoned",
+    "confidence": "high",
+    "reasoning": "The central property is a yellow brick building. While the red brick structure to its left appears dilapidated, the central unit itself shows signs of maintenance and occupancy. It has a visible front door with glass, intact windows on the second floor, and a vehicle parked in front. The vertical wood paneling on the ground floor appears to be siding rather than boarded-up openings. There is no severe structural damage, overgrowth, or graffiti on this specific unit.",
+    "filename": "079_21158_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 1,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 1,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "high",
+    "reasoning": "The building exhibits strong signs of abandonment, primarily evidenced by multiple boarded-up openings. The far-right window on the second floor is covered with wood planks, and on the ground floor, both a window and a door to the right are boarded up (the window has a red sign on it). Additionally, the vegetation in the front yard is unkempt with tall, dry grass, and there are vines growing up the side of the building near the porch, suggesting a lack of regular maintenance.",
+    "filename": "080_21276_front.jpg"
+  },
+  {
+    "suitable": false,
+    "reason": "The image shows a vacant, sloped lot/hillside with no residential building or house visible in the center to assess.",
+    "filename": "083_21796_front.jpg"
+  },
+  {
+    "suitable": false,
+    "reason": "The central area of the image shows a grassy/dirt slope and debris, not a residential building. A large blur also obscures the middle ground, preventing assessment of any central property.",
+    "filename": "084_22455_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "not_abandoned",
+    "confidence": "high",
+    "reasoning": "The most significant indicator of occupancy is the presence of a person sitting on the steps of the left-hand unit. Additionally, the property features active amenities like a satellite dish and trash bins placed near the entrance, which are typical of occupied homes. While the building shows age and weathering, there is no evidence of structural decay, boarding, or severe neglect that would suggest abandonment.",
+    "filename": "088_20505_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "not_abandoned",
+    "confidence": "medium",
+    "reasoning": "The central property (dark brick rowhouse) appears structurally sound with intact windows and awnings. There are no visible signs of boarding, severe decay, or overgrowth that would indicate abandonment. The condition appears consistent with an occupied or well-maintained vacant property, though specific occupancy cannot be confirmed without interior lights or active vehicles in the immediate driveway.",
+    "filename": "111_20355_front.jpg"
+  },
+  {
+    "suitable": false,
+    "reason": "The image shows a vacant, overgrown lot in the center between a brick structure on the left and a yellow building on the right. There is no single central property clearly facing the camera that dominates the view.",
+    "filename": "112_21683_front.jpg"
+  },
+  {
+    "suitable": false,
+    "reason": "The central property is heavily obstructed by a large digital privacy blur and dense vegetation/overgrowth, preventing assessment of the building's condition (windows, doors, structural integrity).",
+    "filename": "113_22673_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 1,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "medium",
+    "reasoning": "The property exhibits signs of neglect, most notably the overgrown vegetation and vines surrounding the porch and lower level, which obscure the entrance. The siding appears weathered and the lawn is unkempt with fallen leaves. While there are no obvious boarded windows or structural collapses, the lack of maintenance and the encroaching vegetation strongly suggest the property is abandoned.",
+    "filename": "114_21392_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 1,
+      "boarded_doors_or_windows": 1,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 1,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "high",
+    "reasoning": "The property shows clear signs of abandonment and neglect. There is a boarded-up window on the first floor and peeling paint throughout. Vines are growing up the side of the house, and there is debris (cones, wood, trash) scattered in the front yard. The windows appear weathered, and the overall condition suggests a lack of recent maintenance or occupancy.",
+    "filename": "116_22486_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "not_abandoned",
+    "confidence": "high",
+    "reasoning": "The image shows a standard two-story residential brick house. There is a car parked in the driveway, and the porch appears to have furniture, suggesting occupancy. The windows and doors are intact with no visible boarding or breakage. While the lawn is not perfectly manicured and there is a large tree on the left, there are no signs of severe neglect, structural decay, or abandonment typical of vacant properties.",
+    "filename": "117_20529_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 1,
+      "boarded_doors_or_windows": 1,
+      "severe_structural_damage": 1,
+      "overgrown_vegetation": 1,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "high",
+    "reasoning": "The central red brick property shows clear signs of abandonment. The ground floor entrance and window are boarded up or covered. The second-story left window is a dark void, missing glass. The side of the building exhibits severe structural damage with the exterior wall missing or stripped, exposing the underlying structure. The adjacent yard is overgrown with vegetation. These factors combined with the boarded openings strongly indicate the property is abandoned.",
+    "filename": "121_22554_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "not_abandoned",
+    "confidence": "high",
+    "reasoning": "The image shows a two-story brick residential building in good physical condition. There are no boarded windows or doors, no visible structural damage like sagging roofs or collapsing walls, and no significant graffiti. The windows are intact and clear. While the grass on the side is a bit long, it does not constitute severe overgrowth obstructing the property. The facade appears clean and maintained, with an intact awning, suggesting the property is likely occupied or actively maintained rather than abandoned.",
+    "filename": "122_22745_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "not_abandoned",
+    "confidence": "high",
+    "reasoning": "The property appears to be a well-maintained residential brick building. The windows are intact, the brickwork is sound, and the porch structure is intact. The presence of fallen leaves on the lawn suggests the season is autumn, but the grass is cut and the yard is not overgrown with wild vegetation. There are no signs of forced entry, boarding up, or severe neglect that would indicate abandonment.",
+    "filename": "123_22906_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 1,
+      "boarded_doors_or_windows": 1,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 1,
+      "graffiti_or_stains_on_walls": 1,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "high",
+    "reasoning": "The property exhibits strong indicators of abandonment. The main entrance is plywood-boarded, and multiple windows appear broken or missing panes. The building is heavily covered in ivy, indicating a lack of maintenance over a long period. Additionally, there is visible graffiti on the exterior wall and peeling paint/siding, further suggesting the structure is vacant and neglected.",
+    "filename": "124_21702_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 1,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 1,
+      "graffiti_or_stains_on_walls": 1,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "high",
+    "reasoning": "The central unit shows clear signs of abandonment. The ground-floor entrance is boarded up with graffiti visible on the boards ('WE NEEDED A PLACE LIKE THIS'). The adjacent window is also covered. Additionally, there is significant overgrown vegetation encroaching on the side of the building, indicating a lack of maintenance. While the adjacent unit to the left appears maintained, the central unit itself is boarded and overgrown.",
+    "filename": "125_20583_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "not_abandoned",
+    "confidence": "high",
+    "reasoning": "The central two-story house appears occupied or at least maintained, with clear windows and an intact front door visible on the porch. While the side siding shows signs of weathering, it lacks the strong indicators of abandonment seen in the neighboring unit to the right (which has boarded windows). The lawn is tidy, and there are no signs of severe structural decay or overgrowth blocking the entrance.",
+    "filename": "126_22251_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "not_abandoned",
+    "confidence": "high",
+    "reasoning": "The central property (the light green house) shows clear evidence of occupancy, most notably the recycling bins (black and blue) placed near the entrance and a clear, accessible path up the front stairs. The windows and front door appear intact and unboarded. While the structure to the immediate left is heavily overgrown with vines, the central residential unit itself is maintained and does not show signs of abandonment.",
+    "filename": "131_21971_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 1,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "medium",
+    "reasoning": "The central property is a raised white cottage-style house. The most significant indicator is the dense, untrimmed vegetation growing underneath and around the front of the structure, obscuring the lower level and likely the entrance. There are no visible signs of current occupancy, such as active lights, parked vehicles, or maintained landscaping. While the structure itself appears intact with no broken or boarded windows, the lack of yard maintenance and the encroaching vegetation are strong visual cues of abandonment.",
+    "filename": "132_22313_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "not_abandoned",
+    "confidence": "high",
+    "reasoning": "The image displays a row of residential brick units. The central unit (distinguished by the corrugated metal porch roof) and its neighbor show signs of occupancy. Specifically, a row of four trash/recycling bins is lined up on the sidewalk in front of the central unit, which is a strong indicator of current residency and scheduled waste collection. Additionally, a chair is visible on the sidewalk near the adjacent unit, and the windows appear intact without boards or obvious breakage. While the porch roof on the central unit appears weathered and sagging, this is indicative of age rather than severe structural collapse or abandonment. The property shows general wear consistent with older housing stock but lacks the key visual markers of abandonment.",
+    "filename": "133_20087_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 1,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "high",
+    "reasoning": "The property is heavily overgrown with dense vegetation, including large trees and thick bushes that obscure the lower level and reach up to the second story. This level of neglect and lack of landscaping is a strong indicator of abandonment. While the visible upper portion of the siding appears intact, the unmanaged nature of the lot and the presence of debris/trash near the curb support the conclusion that the property is not actively maintained.",
+    "filename": "134_21694_front.jpg"
+  },
+  {
+    "suitable": false,
+    "reason": "The image shows a vacant lot in the center; there is no clearly visible house or building centered and facing the camera at street level.",
+    "filename": "143_22534_front.jpg"
+  },
+  {
+    "suitable": false,
+    "reason": "The image shows a vacant grassy lot with trees in the center, rather than a clearly visible house or building facing the camera.",
+    "filename": "144_20720_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 1,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "medium",
+    "reasoning": "The property exhibits strong signs of neglect consistent with abandonment, specifically the heavy vine growth covering a significant portion of the facade and obscuring the entrance, as well as an unmowed lawn covered in fallen leaves. While there are no clearly visible boarded windows or structural collapses, the lack of landscaping maintenance suggests the property is not actively occupied.",
+    "filename": "146_22000_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "not_abandoned",
+    "confidence": "high",
+    "reasoning": "The central building (the three-story red brick structure) appears well-maintained. The trim on the ground floor is freshly painted (black with orange accents), and the windows on the upper floors show signs of life (curtains/blinds visible). There are no broken windows, boardings, or structural damage. While there is overgrown vegetation in the fenced yard of the smaller adjacent house to the left, the central property itself has no such issues.",
+    "filename": "163_22914_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 1,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "medium",
+    "reasoning": "The central red brick row house exhibits clear signs of vacancy, specifically boarded-up windows on the top floor (two visible). While there is a car parked in front and items on the porch which might suggest some activity, the boarded openings are a strong indicator of abandonment or long-term disuse. The property is structurally sound but appears unoccupied.",
+    "filename": "164_20721_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 1,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 1,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "high",
+    "reasoning": "The property exhibits clear signs of abandonment, most notably the windows on the upper floor which are boarded up. There is also visible graffiti on the lower brick foundation wall near the porch. While the surrounding lawn is green and mowed, the boarded openings and graffiti are strong indicators that the specific building unit is vacant and unoccupied.",
+    "filename": "167_20970_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 1,
+      "graffiti_or_stains_on_walls": 1,
+      "lights_on": 0
+    },
+    "final_decision": "not_abandoned",
+    "confidence": "medium",
+    "reasoning": "The property is a multi-story residential building with intact windows that appear to have blinds or curtains drawn, suggesting potential occupancy or maintained privacy. While there are visible signs of neglect such as significant overgrown ivy on the sides and vertical white staining on the facade, the entrance is accessible and not blocked by vegetation, and there is no structural collapse or boarding. These factors suggest a property that may be older or cosmetically unmaintained rather than abandoned.",
+    "filename": "168_20140_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 1,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "high",
+    "reasoning": "The central red brick building displays strong signs of abandonment. The ground floor, which appears to be a commercial storefront, is secured with heavy black metal gates. Behind these gates, the windows and doors are covered with white boards, indicating the space is unoccupied and protected from entry. The upper floors are dark with no visible interior lights or signs of life (such as curtains or blinds in use). While the structure itself is sound, the heavy security and boarding of the entrance suggest long-term vacancy.",
+    "filename": "171_20496_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 1,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 1,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "high",
+    "reasoning": "The central two-story tan brick building shows clear signs of abandonment. The ground floor features a window boarded up with plywood on the left side. The central entrance is secured with a black metal gate, behind which significant overgrown vegetation (vines/bushes) is visible, indicating a lack of maintenance. While the upper windows appear intact, the boarded openings and unmanaged vegetation strongly suggest the property is vacant and abandoned.",
+    "filename": "172_22882_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "not_abandoned",
+    "confidence": "high",
+    "reasoning": "The central property is a multi-unit brick building that appears well-maintained. All visible windows are intact with clear glass, and the doors (labeled 512 and 514) are closed and painted, with no boarding. There is no severe structural damage or sagging. While there are minor weeds in the sidewalk cracks, the property itself is not overgrown. The presence of trash/recycling bins on the right suggests regular occupancy or maintenance. The overall condition indicates an active, inhabited residence.",
+    "filename": "173_19840_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 1,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "high",
+    "reasoning": "The ground floor of the central brick property features a door and two windows that are clearly boarded up with plywood, a strong indicator of vacancy. Additionally, there is significant debris and trash accumulated in the lot to the left of the house, further suggesting neglect. While the upper windows appear intact with curtains visible, the sealed entrance and surrounding disarray point to the property being abandoned.",
+    "filename": "174_21531_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "not_abandoned",
+    "confidence": "medium",
+    "reasoning": "The property appears to be an occupied residential unit. Visible curtains (white on the upper floor, red on the lower floor) suggest interior habitation. The awning is intact, and there are signs of recent activity or maintenance items near the entrance (an orange traffic cone and a bucket), which contrasts with the vacant, overgrown lot immediately to the left. While the foundation is weathered and there are weeds in the driveway area, these do not constitute severe abandonment signals.",
+    "filename": "176_22718_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "not_abandoned",
+    "confidence": "high",
+    "reasoning": "The property exhibits clear signs of occupancy and maintenance. There are numerous potted plants with flowers placed neatly on the front steps and sidewalk, indicating recent care. The windows have curtains or blinds visible inside, and the awnings are deployed. The brick facade and stone foundation appear structurally sound without significant damage, boarding, or decay. The overall appearance is that of a well-kept residential home.",
+    "filename": "177_21455_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 1,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "high",
+    "reasoning": "The central red brick property shows significant signs of disrepair, specifically a collapsed or severely rotted front porch roof structure (blackened, skeletal frame). While the upper windows appear intact, the ground floor is obscured by this structural failure. Compared to the unit on the right, which has furniture and a satellite dish indicating occupancy, the central unit shows no signs of active habitation and has severe structural damage consistent with abandonment.",
+    "filename": "181_22093_front.jpg"
+  },
+  {
+    "suitable": false,
+    "reason": "The image shows an alleyway or vacant lot between two buildings rather than a single central property facing the camera.",
+    "filename": "183_21648_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 1,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 0,
+      "graffiti_or_stains_on_walls": 1,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "high",
+    "reasoning": "The central building is a former commercial storefront (indicated by the 'Pernell Printing Co.' ghost sign) that appears abandoned. The main entrance/opening is painted over/sealed, there is significant graffiti ('NERDS Food Collection'), and no signs of active occupancy like lights or maintained landscaping. While attached to residential-style buildings, the central unit itself shows strong signs of vacancy and disuse.",
+    "filename": "186_19919_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 1,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "medium",
+    "reasoning": "The property shows clear signs of neglect, most notably the overgrown vegetation in the front yard which covers the ground up to the foundation and street. There are no visible signs of active occupancy such as parked vehicles, mail, or interior lights. While the brick structure itself appears physically intact without broken windows or boarded openings, the unkempt state of the grounds and items (blue containers) on the porch suggest the property is currently abandoned or vacant.",
+    "filename": "187_21506_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 1,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "abandoned",
+    "confidence": "medium",
+    "reasoning": "The property exhibits significant overgrown vegetation in the front yard area, consisting of tall, dry bushes that obscure the porch railing and steps. This level of unkempt landscaping, combined with the sagging condition of the striped awning, suggests a long period of neglect consistent with an abandoned property, despite the brick structure appearing generally sound.",
+    "filename": "196_22385_front.jpg"
+  },
+  {
+    "suitable": true,
+    "attributes": {
+      "broken_or_missing_windows": 0,
+      "boarded_doors_or_windows": 0,
+      "severe_structural_damage": 0,
+      "overgrown_vegetation": 1,
+      "graffiti_or_stains_on_walls": 0,
+      "lights_on": 0
+    },
+    "final_decision": "not_abandoned",
+    "confidence": "medium",
+    "reasoning": "The property is a residential row house with intact structural elements, including a clear brick facade and an intact striped awning. While there is overgrown vegetation (vines on the retaining wall and tall bushes in the front area) suggesting some lack of recent landscaping, there are no definitive signs of abandonment such as boarded windows, broken glass, or severe structural decay. The windows appear clear and the building seems maintained enough to be occupied.",
+    "filename": "197_22327_front.jpg"
+  }
+]

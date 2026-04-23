@@ -8,8 +8,8 @@ from openai import OpenAI
 # Config
 # ─────────────────────────────────────────────
 
-IMAGE_DIR    = "../gsv_out"   # update to your image folder on the server
-RESULTS_FILE = os.path.join(IMAGE_DIR, "results.json")
+IMAGE_DIR    = "../data/gsv_out/first_200"   # update to your image folder on the server
+RESULTS_FILE = "../result/result_2.json" 
 MODEL        = "/u/capstone/hf_cache/Qwen3.5-35B-A3B"
 
 client = OpenAI(
@@ -20,8 +20,8 @@ client = OpenAI(
 SYSTEM_PROMPT = """
 You are an expert in urban property assessment. You will be given a Google Street View image.
 
-Focus ONLY on the house or building directly in the CENTER of the image at street level. 
-The target property should be the dominant subject facing the camera.
+Focus on the house or building directly in the CENTER of the image at street level.
+If the image shows a row of attached units, judge only the central unit, not its neighbors.
 
 An image is UNSUITABLE if any of the following are true:
 - The camera is looking down a street or alley with no single central property facing it
@@ -37,7 +37,8 @@ If the image is unsuitable, respond ONLY with this JSON:
   "reason": "Brief explanation of why the image cannot be assessed."
 }
 
-If the image is suitable, analyze the central residential property and respond ONLY with this JSON:
+If the image is suitable, record what you observe and make a holistic judgment.
+Respond ONLY with this JSON:
 {
   "suitable": true,
   "attributes": {
@@ -50,42 +51,24 @@ If the image is suitable, analyze the central residential property and respond O
   },
   "final_decision": "abandoned",
   "confidence": "high",
-  "reasoning": "Your reasoning here. Explain which attributes you observed and how they influenced your decision."
+  "reasoning": "Your reasoning here."
 }
 
-Rules:
-- Each attribute must be 0 (not present) or 1 (present). Be thorough and inspect the central property carefully.
+Output format:
+- Each attribute must be 0 (not present) or 1 (present). Record what you actually see — these are observations, not a scoring rubric.
 - final_decision must be either "abandoned" or "not_abandoned".
 - confidence must be one of: "low", "medium", or "high".
-- Use "high" confidence when the visible evidence is clear and strongly supports the decision.
-- Use "medium" confidence when the evidence is somewhat clear but limited, mixed, or partially ambiguous.
-- Use "low" confidence when the evidence is weak, unclear, partially obstructed, or the decision is uncertain.
-- The attributes are the PRIMARY factor in your decision. Do not override them based on general appearance alone.
 - Do not include any text outside the JSON object.
-- You MUST NOT output any reasoning or thinking before the JSON.
 
-Interpret the attributes as follows:
-- broken_or_missing_windows = 1 is evidence toward abandoned
-- boarded_doors_or_windows = 1 is strong evidence toward abandoned, even if no other negative attributes are present
-- severe_structural_damage = 1 is very strong evidence toward abandoned, even if no other negative attributes are present
-- overgrown_vegetation = 1 is evidence toward abandoned
-- graffiti_or_stains_on_walls = 1 is evidence toward abandoned, but weaker than boarded openings or structural damage
-- lights_on = 1 is evidence toward not_abandoned, because visible active lighting suggests occupancy or recent use
+How to decide:
+- Use holistic visual judgment, the way an experienced inspector would. Do NOT count attributes or apply any fixed threshold (e.g. "one attribute means not abandoned"). Weigh the severity and clarity of what you see.
+- The attributes above are a checklist of common signals, but the decision is yours — consider the overall condition of the property, not just whether a box is checked.
 
-Decision guidance:
-- Do NOT use a simple rule such as "0 or 1 attributes means not abandoned."
-- Some single attributes can be sufficient by themselves to support "abandoned," especially boarded_doors_or_windows or severe_structural_damage.
-- Multiple negative attributes strongly support "abandoned."
-- If lights_on = 1, treat that as counter-evidence against abandonment. It should reduce the likelihood of "abandoned" unless there is clear stronger evidence such as boarded openings, severe structural damage, or multiple other negative attributes.
-- If both positive and negative signals are present, weigh the strength of the evidence rather than just counting attributes.
-- Give more weight to boarded_doors_or_windows and severe_structural_damage than to graffiti/stains alone.
-- Overgrown vegetation can support "abandoned," especially when combined with any other negative sign.
-- Broken or missing windows are meaningful evidence toward "abandoned," especially when clearly visible.
-- Do not assume a property is not abandoned just because it appears intact overall if one strong abandonment indicator is clearly present.
-
-Reasoning guidance:
-- In the reasoning field, briefly state which attributes were observed, which were not observed, and why the strongest signals led to the final decision.
-- Keep the reasoning concise and focused on the listed attributes.
+Context worth knowing (awareness, not rules):
+- The following are common around BOTH occupied and abandoned homes and should NOT by themselves be treated as evidence of occupancy: trash or recycling bins on the sidewalk, parked cars, porch furniture, flags, potted plants, stickers or paper notices on doors or windows.
+- Stronger evidence of occupancy: interior lights on, people present, curtains/blinds that look recently used, a clearly mowed or tended lawn, active utility equipment.
+- Stronger evidence of abandonment: boarded openings, collapsed or sagging structure, visibly missing windows, heavy overgrowth reaching or covering the entrance, long-term decay that looks unmaintained.
+- Surface wear alone (faded paint, weathered brick, minor stains) is not, on its own, a strong abandonment signal — many occupied older homes look like this.
 """
 
 # ─────────────────────────────────────────────
@@ -124,13 +107,13 @@ def query_image(image_path):
                         },
                         {
                             "type": "text",
-                            "text": "Analyze this property image and return the JSON assessment. Keep your thinking concise and output the JSON immediately after."
+                            "text": "Analyze this property image and return the JSON assessment."
                         },
                     ],
                 },
             ],
             max_tokens=30000,
-            extra_body={"enable_thinking": False},
+            extra_body={"enable_thinking": True},
         )
 
         raw = response.choices[0].message.content
