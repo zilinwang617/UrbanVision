@@ -37,26 +37,33 @@ The vision model is expected at `http://localhost:8000/v1` (vLLM or compatible s
 UrbanVision/
 ├── src/
 │   ├── gsv_pipeline.py       # Street View image acquisition pipeline
-│   └── Tax.py                # WPRDC tax-status queries
+│   └── tax.py                # WPRDC tax-status queries
 ├── notebook/
-│   ├── gsv-data.ipynb        # Bulk image download workflow
-│   ├── Data_cleaning.ipynb   # Raw data preprocessing
+│   ├── gsv_data.ipynb        # Bulk image download workflow
+│   ├── data_cleaning.ipynb   # Raw data preprocessing
 │   ├── query_properties.py   # Vision model evaluation
 │   ├── evaluation.ipynb      # Results analysis
 │   └── visualization.ipynb   # Spatial heatmaps
 ├── data/
 │   ├── cleaned_data.csv      # Processed property records
 │   └── raw.csv               # Raw parcel data
-├── result/                   # Model prediction outputs (JSON)
+├── result/                   # Pipeline outputs (gitignored)
+│   └── <run_name>.json       # Per-property assessment: status, damage indicators, confidence
 ├── .env.example
 └── requirements.txt
 ```
+
+Each entry in a result JSON contains:
+- `parcel_id` — property identifier
+- `status` — `occupied` / `abandoned` / `uncertain`
+- `indicators` — list of observed signals (boarded windows, overgrowth, graffiti, etc.)
+- `confidence` — model confidence score
 
 ## Usage
 
 ### 1. Download Street View images
 
-Run `notebook/gsv-data.ipynb` or call the pipeline directly:
+Run `notebook/gsv_data.ipynb` or call the pipeline directly:
 
 ```python
 from src.gsv_pipeline import fetch_entries
@@ -68,16 +75,12 @@ Key parameters in `fetch_entries`:
 - `max_distance` — hard cutoff for selected pano distance (default 20 m)
 - `year_tolerance` — how many years from property creation date to allow (default 2)
 
+Images and metadata are saved under `data/gsv_out/<entry_id>/`.
+
 ### 2. Evaluate properties
 
-Run `notebook/query_properties.py` to send images to the vision model and get JSON assessments (occupancy status, damage indicators, confidence score).
+Run `notebook/query_properties.py` to send images to the vision model. Results are written to `result/<run_name>.json`.
 
 ### 3. Analyze & visualize
 
 Open `notebook/evaluation.ipynb` for accuracy metrics across prompt variants, and `notebook/visualization.ipynb` for spatial heatmaps of predicted abandonment.
-
-## Results
-
-Current scale: **1,000 properties** evaluated. Outputs in `result/`:
-- `result_1-1000.json` — baseline prompt results
-- `new-prompt-result.json` / `refined_propmpt_results.json` — prompt iteration results
