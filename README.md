@@ -84,3 +84,7 @@ Run `notebook/query_properties.py` to send images to the vision model. Results a
 ### 3. Analyze & visualize
 
 Open `notebook/evaluation.ipynb` for accuracy metrics across prompt variants, and `notebook/visualization.ipynb` for spatial heatmaps of predicted abandonment.
+
+## License
+
+Copyright (c) 2025 Zilin Wang, Samuel Houpt, and Xiaoting Wang. All Rights Reserved.
