@@ -3,7 +3,7 @@ __pycache__/
 .ipynb_checkpoints/
 notebook/gsv_out/
 notebook/.DS_Store
-.DS_Store
+**/.DS_Store
 /output/
 data/gsv_out/
 data/gsv_out_archive/
